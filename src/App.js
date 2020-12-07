@@ -83,7 +83,7 @@ export default function App() {
       <div style={divStyle}>
         <div style={{ marginBottom: "1rem" }}>
           {" "}
-          Emojis present in our database 👇
+          Emojis present in database 👇
         </div>
 
         {emojiArray.map(function (emoji) {
