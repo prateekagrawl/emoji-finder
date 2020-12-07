@@ -22,6 +22,7 @@ var emojiDictionary = {
   "😊": "Smiling",
   "😐": "Neutral face",
   "😳": "Disbelief",
+  "😂": "Face with tears of joy",
   "😍": "Heart eyes",
   "😔": "Sad",
   "😃": "Happy face",
@@ -36,6 +37,7 @@ var emojiDictionary = {
   "😲": "Astonished face",
   "😢": "Crying face",
   "😞": "Disappointed face",
+  "😵": "Dizzy face",
   "😠": "Angry face",
   "😰": "Anxious face with sweat",
   "😘": "Face blowing a kiss",
@@ -63,9 +65,9 @@ export default function App() {
 
   return (
     <div className="App">
-      <h1>Emoji finder</h1>
+      <h1 style={{ marginTop: "3rem" }}>Emotion interpretor</h1>
       <p style={{ fontWeight: "normal" }}>
-        You can either paste an emoji here or click on any emoji mentioned
+        You can either paste an emoji here or click on any emoji mentioned below
       </p>
       <input
         style={inputStyle}
