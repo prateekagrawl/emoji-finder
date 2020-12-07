@@ -2,17 +2,20 @@ import React, { useState } from "react";
 import "./styles.css";
 
 const headStyle = {
+  display: "block",
   padding: "0.4rem",
   height: "5vh",
-  width: "60%",
-  marginBottom: "1rem"
+  width: "40%",
+  marginBottom: "1rem",
+  margin: "auto"
 };
 const divStyle = {
-  width: "60%",
+  width: "50%",
   margin: "auto",
-  border: "1px solid",
-  backgroundColor: "#ffda77",
-  padding: "1rem"
+  border: "1px none ",
+  backgroundColor: "rgb(245 239 141)",
+  padding: "1rem",
+  borderRadius: "1rem"
 };
 
 var emojiDictionary = {
@@ -60,9 +63,16 @@ export default function App() {
 
   return (
     <div className="App">
-      <h1>emoji finder</h1>
-      <input style={headStyle} onChange={emojiChangeHandler}></input>
-      <div style={{ color: "black", margin: "0.5rem", fontWeight: "bold" }}>
+      <h1>Emoji finder</h1>
+      <p style={{ fontWeight: "normal" }}>
+        You can either paste an emoji here or click on any emoji mentioned
+      </p>
+      <input
+        style={headStyle}
+        placeholder="Paste an emoji here"
+        onChange={emojiChangeHandler}
+      ></input>
+      <div style={{ color: "black", margin: "1rem", fontWeight: "bold" }}>
         {" "}
         {meaning}{" "}
       </div>
