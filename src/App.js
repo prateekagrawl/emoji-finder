@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./styles.css";
 
-const headStyle = {
+const inputStyle = {
   display: "block",
   padding: "0.4rem",
   height: "5vh",
@@ -68,7 +68,7 @@ export default function App() {
         You can either paste an emoji here or click on any emoji mentioned
       </p>
       <input
-        style={headStyle}
+        style={inputStyle}
         placeholder="Paste an emoji here"
         onChange={emojiChangeHandler}
       ></input>
