@@ -41,7 +41,7 @@ var emojiDictionary = {
   "😠": "Angry face",
   "😰": "Anxious face with sweat",
   "😘": "Face blowing a kiss",
-  "😇": "Smiling face with Halio"
+  "😇": "Smiling face with Halo"
 };
 
 var emojiArray = Object.keys(emojiDictionary);
