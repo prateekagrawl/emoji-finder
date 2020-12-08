@@ -93,7 +93,7 @@ export default function App() {
               style={{ cursor: "pointer", padding: "0.5rem" }}
               key={emoji}
             >
-              {emoji}{" "}
+              {emoji} {/* passed emoji to put them in db */}
             </span>
           );
         })}
